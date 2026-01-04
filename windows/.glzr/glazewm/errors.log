@@ -1,0 +1,11 @@
+[2m2026-01-02T14:44:23.624915Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '2' doesn't exist or is already active.
+[2m2026-01-02T14:46:31.433290Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '2' doesn't exist or is already active.
+[2m2026-01-02T14:46:32.943312Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '1' doesn't exist or is already active.
+[2m2026-01-02T14:57:53.467996Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name 'main' doesn't exist or is already active.
+[2m2026-01-02T14:58:47.201015Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name 'temp' doesn't exist or is already active.
+[2m2026-01-02T14:58:50.393988Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name 'temp' doesn't exist or is already active.
+[2m2026-01-02T14:59:09.422373Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '0' doesn't exist or is already active.
+[2m2026-01-02T14:59:48.244110Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '4' doesn't exist or is already active.
+[2m2026-01-02T15:38:01.405706Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 139 column 7, while parsing a block mapping at line 138 column 5
+[2m2026-01-02T19:18:02.765562Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2026-01-03T20:07:22.736006Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '7' doesn't exist or is already active.

@@ -341,7 +341,7 @@ keybindings:
     bindings: ['alt+shift+5']
   - commands: ['move --workspace proxy', 'focus --workspace proxy']
     bindings: ['alt+shift+6']
-  - commands: ['move --workspace 7', 'focus --workspace 7']
+  - commands: ['move --workspace 😋', 'focus --workspace 😋']
     bindings: ['alt+shift+7']
   - commands: ['move --workspace 8', 'focus --workspace 8']
     bindings: ['alt+shift+8']

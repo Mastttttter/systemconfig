@@ -9,3 +9,5 @@
 [2m2026-01-02T15:38:01.405706Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 139 column 7, while parsing a block mapping at line 138 column 5
 [2m2026-01-02T19:18:02.765562Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
 [2m2026-01-03T20:07:22.736006Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '7' doesn't exist or is already active.
+[2m2026-01-05T11:04:11.461964Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Workspace with name '7' doesn't exist or is already active.
+[2m2026-01-06T01:48:59.312959Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m No common ancestor between containers.

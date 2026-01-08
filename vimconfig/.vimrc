@@ -24,3 +24,17 @@ syntax on
 inoremap kj <ESC>
 inoremap jk <ESC>
 vnoremap q <ESC>
+" this is for wsl 
+" let g:clipboard = {
+"     \ 'name': 'WslClipboard',
+"     \ 'copy': {
+"     \   '+': 'clip.exe',
+"     \   '*': 'clip.exe',
+"     \ },
+"     \ 'paste': {
+"     \   '+': 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))', 
+"     \   '*': 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+"     \ },
+"     \   'cache_enabled': 0,
+"     \ }
+

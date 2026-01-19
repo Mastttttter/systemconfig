@@ -1,20 +1,44 @@
 set encoding=utf-8
-set et ts=4 sts=4 sw=4
-set ls=2 fdm=syntax fdl=100
-set nu rnu ru
-set hls is si
-set cinoptions=j1,(0,ws,Ws,g0
-set timeout nottimeout ttimeoutlen=10
 set mouse=a
+set mousemodel=extend
+set updatetime=300
+set nu rnu ru ls=2
 " set laststatus=2
+set et sts=0 ts=4 sw=4
+set signcolumn=number
+" set signcolumn=yes
+" about search highlights
+set hls is si
+" set nohls
 set listchars=tab:▸\ ,trail:⋅,extends:❯,precedes:❮
+set cinoptions=j1,(0,ws,Ws,g0,:0,=0,l1
+set cinwords=if,else,switch,case,for,while,do
 set showbreak=↪
 set list
-set virtualedit=all
-"set noek
-"set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+" set clipboard+=unnamedplus
+set switchbuf=useopen
 "set switchbuf=usetab
+set exrc
+" about folding
+" set fdm=syntax fdl=100
+set foldtext='+--'
+set bri wrap
+"set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+set timeout nottimeout ttimeoutlen=10
+set virtualedit=all
 set undofile
+set hidden
+set nobackup
+set nowritebackup
+set cmdheight=1
+set shortmess+=c
+set bg=dark
+hi LineNrAbove guifg=#cc6666 ctermfg=red
+hi LineNrBelow guifg=#66cc66 ctermfg=green
+hi Normal ctermbg=none
+hi SignColumn ctermbg=none
+set termguicolors
+
 if has('nvim')
     set undodir=/tmp//,.
     set backupdir=/tmp//,.
@@ -24,8 +48,6 @@ else
     set backupdir=/tmp//,.
     set directory=/tmp//,.
 endif
-" set bg=dark
-
 
 syntax on
 filetype on
@@ -53,24 +75,11 @@ xnoremap <silent><expr> gh (v:count == 0 ? '^' : '^^' . (v:count != 1 ? (v:count
 xnoremap <silent><expr> gl (v:count == 0 ? '$' : '^$' . (v:count != 1 ? (v:count - 1) . 'h' : ''))
 tnoremap <ESC> <C-\><C-n>
 
-set hidden
-set nobackup
-set nowritebackup
-set updatetime=300
-set cmdheight=1
-set shortmess+=c
-" set signcolumn=yes
 augroup insert_curline
     autocmd InsertEnter,InsertLeave * set cul!
 augroup end
 autocmd SwapExists * let v:swapchoice = "e"
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-set bg=dark
-hi LineNrAbove guifg=#cc6666 ctermfg=red
-hi LineNrBelow guifg=#66cc66 ctermfg=green
-hi Normal ctermbg=none
-hi SignColumn ctermbg=none
-set termguicolors
 " this is for wsl 
 " let g:clipboard = {
 "     \ 'name': 'WslClipboard',

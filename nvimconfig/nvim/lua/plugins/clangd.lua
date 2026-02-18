@@ -3,10 +3,10 @@ return {
   lazy = false,
   opts = {},
   keys = {
-    { "<leader>vcg", "<cmd>CMakeGenerate  && LspRestart<cr>", desc = "CMakeGenerate", mode = "n" },
-    { "<leader>vcb", "<cmd>CMakeBuild  && LspRestart<cr>", desc = "CMakeBuild", mode = "n" },
+    { "<leader>vcg", "<cmd>CMakeGenerate<cr>", desc = "CMakeGenerate", mode = "n" },
+    { "<leader>vcb", "<cmd>CMakeBuild<cr>", desc = "CMakeBuild", mode = "n" },
     { "<leader>vcr", "<cmd>CMakeRun<cr>", desc = "CMakeRun", mode = "n" },
-    { "<leader>vcd", "<cmd>CMakeDebug", desc = "CMakeDebug", mode = "n" },
+    { "<leader>vcd", "<cmd>CMakeDebug<cr>", desc = "CMakeDebug", mode = "n" },
     { "<leader>vcc", "<cmd>CMakeClean<cr>", desc = "CMakeClean", mode = "n" },
     { "<leader>vcq", "<cmd>CMakeQuickStart<cr>", desc = "CMakeQuickStart", mode = "n" },
     { "<leader>vcoe", "<cmd>CMakeOpenExecutor<cr>", desc = "CMakeOpenExecutor", mode = "n" },

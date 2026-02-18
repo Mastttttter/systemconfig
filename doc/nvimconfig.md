@@ -50,3 +50,15 @@ sudo pacman -Syu pyright fzf ruff python-debugpy
 |`kj`|`<C-\><C-n`|t|
 
 ## Usage of default plugins
+
+### tex
+
+#### prerequisite
+
+```shell
+sudo pacman -S latex
+```
+
+> tips after enable tex support in LazyExtras , the default use pdflatex not xelatex, that does not support Chinese. To use xelatex, add `%!TEX program = xelatex` at the top of the tex file.
+
+> Another tips: if you're use wsl arch, check your `/etc/paperconfig` delete the guide note in that file and add `a4` or something you want to it.

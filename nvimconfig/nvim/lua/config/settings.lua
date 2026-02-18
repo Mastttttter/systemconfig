@@ -9,7 +9,7 @@ local default_opts = {
   enable_kitty = false,
   wsl2_env = true,
   -- colorscheme = "kanagawa-dragon",
-  colorscheme = "tokyonight-moon",
+  colorscheme = "tokyonight-night",
 }
 
 (function()

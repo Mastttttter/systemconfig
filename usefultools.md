@@ -1,5 +1,6 @@
 ## 下载
-https://aria2.github.io/
+<https://aria2.github.io/>
+
 ## miniconda
 
 在aur里面有
@@ -9,3 +10,7 @@ https://aria2.github.io/
 ```fish
 /opt/miniconda3/bin/conda init fish
 ```
+
+## uv
+
+<https://github.com/astral-sh/uv>

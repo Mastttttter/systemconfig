@@ -1,13 +1,29 @@
 return {
   "Mastttttter/plantuml.nvim",
-  -- 假设你将其放在本地路径或 git 仓库
-  dir = "/mnt/e/code/lua/plantuml",
-  config = function()
-    require("plantuml").setup({
-      output_dir = "/tmp/pumltmp",
-      suffix = "_tutxt",
-      plantuml_cmd = "plantuml",
-      utxt_suffix = ".utxt",
+  -- dir = "/mnt/e/code/lua/plantuml",
+  init = function()
+    vim.filetype.add({
+      extension = {
+        puml = "plantuml",
+        uml = "plantuml",
+      },
     })
   end,
+  ft = { "plantuml" }, -- Lazy load when opening .puml or .uml files
+  config = function()
+    require("plantuml").setup({
+      -- java_cmd = "java",
+      -- plantuml_jar = nil, -- Path to plantuml.jar (optional if plantuml is in PATH)
+      -- inkscape_cmd = "inkscape",
+      -- server_port = 8890,
+      -- png_dpi = 800,
+    })
+  end,
+  keys = {
+    { "<leader>vup", "<cmd>PlantumlPreview<cr>", desc = "Preview PlantUML in browser" },
+    { "<leader>vuu", "<cmd>PlantumlPreviewUTXT<cr>", desc = "Preview PlantUML as ASCII" },
+    { "<leader>vus", "<cmd>PlantumlCreateSVG<cr>", desc = "Create SVG file" },
+    { "<leader>vug", "<cmd>PlantumlCreatePNG<cr>", desc = "Create PNG file (high-DPI)" },
+    { "<leader>vut", "<cmd>PlantumlCreateUTXT<cr>", desc = "Create UTXT file" },
+  },
 }

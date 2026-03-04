@@ -194,7 +194,7 @@ widgets:
       api_key: env
       update_interval: 600
       hide_decimal: true
-      location: env
+      location: Yancheng
       callbacks:
         on_left: "toggle_card"
         on_middle: "do_nothing"

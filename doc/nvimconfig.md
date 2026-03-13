@@ -16,7 +16,7 @@ Most of them are powered by `LazyExtras`
 
 #### prerequisite
 
-`marksman`
+`marksman` `markdownlint-cli2`
 
 You can install it in arch use pacman
 
@@ -32,7 +32,7 @@ Use `:MarkdownPreview` to preview current markdown in default browser
 
 #### prerequisite
 
-`pyright` `fzf` `ruff` `debugpy`
+`python-black`
 
 You can install them in arch use `pacman`
 
@@ -68,3 +68,15 @@ sudo pacman -S latex
 #### prerequisite
 
 `plantuml` `Node.js` `inkscape`
+
+### cpp
+
+#### prerequisite
+
+`clang-format` `cmake`
+
+### fish
+
+#### prerequisite
+
+`fish_indent`
